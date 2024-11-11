@@ -1,0 +1,281 @@
+/* font import */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    /* Colors */
+
+    /* Primary */ 
+    --Tomato: hsl(4, 100%, 67%);
+
+    /* Neutral */
+    --Dark-Slate-Grey: hsl(234, 29%, 20%);
+    --Charcoal-Grey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+
+    /* fonts */
+    --font-roboto: 'Roboto';
+}
+
+/* CSS Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+  }
+  
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  #root, #__next {
+    isolation: isolate;
+  }
+  /* CSS Reset end */
+
+  /* css style */
+
+  body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    font-family: var(--font-roboto);
+  }
+
+  .singup-container{
+    max-width: 23.4375rem;
+    displa: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--White);
+    color: var(--Dark-Slate-Grey);
+    display: none;
+  }
+
+  .singup-main{
+    margin: 2rem 1.5625rem 2.5rem 1.5625rem;
+  }
+
+  .singup-head-text{
+    font-weight: 700;
+    font-size: 2.375rem;
+    margin-bottom: 0.875rem;
+  }
+
+  .singup-text{
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+  }
+
+  .signup-list{
+    list-style:none;
+    padding-left: 0rem;
+  }
+
+  .signup-list-item{
+    font-weight: 400;
+    margin-bottom: 0.75rem;
+    display: flex;
+    flex-direction: row;
+    img{
+        margin-right: 1rem;
+        margin-bottom: auto;
+    }
+  }
+
+  .singup-form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.75rem;
+  }
+
+  .singup-form-label{
+    font-weight: 700;
+    font-size: 0.75rem;
+    margin-bottom: 0.625rem;
+  }
+
+  .singup-form-input{
+    width: 20.3125rem;
+    height: 3.375rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--Charcoal-Grey);
+    color: var(--Dark-Slate-Grey);
+    outline: none;
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+  }
+
+  .singup-btn{
+    width: 20.3125rem;
+    height: 3.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--Dark-Slate-Grey);
+    color: var(--White);
+    font-weight: 400;
+    border: none;
+
+  }
+
+
+
+  .success-container{
+    max-width: 23.4375rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1.5rem;
+    color: var(--Dark-Slate-Grey);
+    background-color: var(--White);
+  }
+
+  .success-icon{
+    margin-top: 7.75rem;
+    margin-bottom: 2.75rem;
+  }
+
+  .success-header{
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 1;
+    margin-bottom: 2.125rem;
+
+  }
+
+  .success-text{
+    font-weight: 400;
+    margin-bottom: 16.625rem;
+  }
+
+  #success-emali{
+    font-weight: 700;
+  }
+
+  .success-btn{
+    width: 20.3125rem;
+    height: 3.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--Dark-Slate-Grey);
+    color: var(--White);
+    font-weight: 400;
+    align-self: center;
+    border: none;
+  }
+
+  footer{
+    margin-top: 1.25rem;
+  }
+
+
+
+  
+  @media only screen and (min-width: 37.5rem){
+    body{
+        background-color: var(--Dark-Slate-Grey);
+        height: 100vh;
+        justify-content: center;
+    }
+
+    .singup-container{
+        max-width: 58rem;
+        display: grid;
+        grid-template-rows: 40rem;
+        grid-template-columns: 30rem 25rem ;
+        padding: 0rem 1.5rem;
+        border-radius: 1.5625rem;
+        visibility: hidden;
+        display: none !important;
+    }
+    .singup-banner{
+        grid-column: 2/2;
+        grid-row: 1/-1;
+    }
+
+    .singup-main{
+        grid-column: 1/2;
+        grid-row: 1/-1;
+        align-self: self-start;
+        margin: 5.1875rem 2.4375rem 0rem 2.5rem;
+    }
+
+    .singup-head-text{
+        font-size: 3.5rem;
+        margin-bottom: 0.5625rem;
+    }
+
+    .signup-list{
+        margin-bottom: 2.3125rem;
+    }
+
+    .singup-form{
+        margin-top: 0rem;
+    }
+
+    .singup-form-input{
+        width: 23.375rem;
+    }
+
+    .singup-btn{
+        width: 23.375rem;
+        transition: all 0.5s;
+    }
+
+    .singup-btn:hover{
+        background-color: var(--Tomato);
+        cursor: pointer;
+        box-shadow: var(--Tomato) 0px 30px 60px -25px, var(--Tomato)  0px 18px 36px -18px;        
+    }
+
+
+    .success-container{
+      max-width: 31.5625rem;
+      height: 32.5rem;
+      border-radius: 1.5625rem;
+      padding: 3rem 4rem 4rem 4rem;
+    }
+
+    .success-icon{
+      margin-top: 0rem;
+      margin-bottom: 2.5625rem;
+    }
+
+    .success-header{
+      margin-bottom: 1rem;
+      font-size: 3.5rem;
+    }
+
+    .success-text{
+      margin-bottom: 2.875rem;
+    }
+
+    .success-btn{
+      width: 23.5rem;
+      transition: all 0.5s;
+    }
+
+    .success-btn:hover{
+      background-color: var(--Tomato);
+      cursor: pointer;
+      box-shadow: var(--Tomato) 0px 30px 60px -25px, var(--Tomato)  0px 18px 36px -18px; 
+    }
+
+  }
