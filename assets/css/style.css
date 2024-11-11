@@ -149,7 +149,7 @@
   }
 
   .success-icon{
-    margin-top: 7.75rem;
+    margin-top: 3rem;
     margin-bottom: 2.75rem;
   }
 
@@ -163,7 +163,7 @@
 
   .success-text{
     font-weight: 400;
-    margin-bottom: 16.625rem;
+    margin-bottom: 10rem;
   }
 
   #success-emali{
@@ -182,7 +182,10 @@
   }
 
   footer{
-    margin-top: 1.25rem;
+    margin: 1.25rem;
+    .attribution{
+      color: var(--Dark-Slate-Grey);
+    }
   }
 
 
@@ -276,6 +279,10 @@
       background-color: var(--Tomato);
       cursor: pointer;
       box-shadow: var(--Tomato) 0px 30px 60px -25px, var(--Tomato)  0px 18px 36px -18px; 
+    }
+
+    .attribution{
+      color: white !important;
     }
 
   }
