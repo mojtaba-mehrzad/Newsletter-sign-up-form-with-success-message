@@ -181,10 +181,15 @@
     border: none;
   }
 
-  footer{
-    margin: 1.25rem;
-    .attribution{
-      color: var(--Dark-Slate-Grey);
+  .attribution{
+    font-size: 11px;
+    text-align: center;
+    color: var(--Dark-Slate-Grey);
+    margin-top: 1rem;
+    margin-bottom: 0.625rem;
+
+    a{
+      color: var(--Tomato);
     }
   }
 
@@ -282,7 +287,7 @@
     }
 
     .attribution{
-      color: white !important;
+      color: white;
     }
 
   }
