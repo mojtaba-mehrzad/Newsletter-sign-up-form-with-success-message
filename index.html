@@ -14,7 +14,7 @@
 <body>
   <main>
     <!-- Sign-up form start -->
-    <div class="singup-container">
+    <div class="singup-container" id="singupPage">
       <picture>
         <source media="(max-width: 37.5rem)" srcset="./assets/images/illustration-sign-up-mobile.svg">
         <source media="(min-width: 37.5625rem)" srcset="./assets/images/illustration-sign-up-desktop.svg">
@@ -37,23 +37,26 @@
             <p class="singup-list-item-text">And much more!</p>
           </li>
         </ul>
-        <form action="" class="singup-form">
-          <label class="singup-form-label" for="email">Email address</label>
-          <input class="singup-form-input" type="text" name="email" id="email" placeholder="email@company.com">
-          <button class="singup-btn" type="submit">Subscribe to monthly newsletter</button>
+        <form novalidate class="singup-form" id="singupForm">
+          <div class="label-and-error">
+            <label class="singup-form-label" for="email">Email address</label>
+            <span class="invalid-email" id="error"></span>
+          </div>
+          <input class="singup-form-input" type="email" autocomplete="email" id="email" placeholder="email@company.com">
+          <button class="singup-btn" id="submitBtn" type="submit">Subscribe to monthly newsletter</button>
         </form>
       </section>
     </div>
     <!-- Sign-up form end -->
 
     <!-- Success message start -->
-    <div class="success-container">
+    <div class="success-container" id="successPage">
       <img class="success-icon" src="./assets/images/icon-success.svg" alt="">
       <p class="success-header">Thanks for subscribing!</p>
-      <p class="success-text">A confirmation email has been sent to <span id="success-emali">ash@loremcompany.com</span>.
+      <p class="success-text">A confirmation email has been sent to <span id="successEmail">ash@loremcompany.com</span>.
         Please open it and click the button inside to confirm your subscription.
       </p>
-      <button class="success-btn">Dismiss message</button>
+      <button id="successBtn" class="success-btn">Dismiss message</button>
     </div>
      <!-- Success message end -->
 
@@ -67,6 +70,6 @@
   </footer>
 
   
-  
+  <script src="./assets/js/script.js"></script>
 </body>
 </html>
