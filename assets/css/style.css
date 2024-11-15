@@ -50,7 +50,6 @@
   /* CSS Reset end */
 
   /* css style */
-
   body{
     display: flex;
     flex-direction: column;
@@ -59,6 +58,7 @@
     font-family: var(--font-roboto);
   }
 
+  /* sing up start */
   .singup-container{
     max-width: 23.4375rem;
     display: flex;
@@ -78,6 +78,7 @@
     margin: 2rem 1.5625rem 2.5rem 1.5625rem;
   }
 
+  /* sing up texts start */
   .singup-head-text{
     font-weight: 700;
     font-size: 2.375rem;
@@ -104,7 +105,9 @@
         margin-bottom: auto;
     }
   }
+  /* sign up texts end */
 
+  /* form start */
   .singup-form{
     display: flex;
     flex-direction: column;
@@ -131,6 +134,7 @@
     color: var(--Tomato);
   }
 
+  /* input start*/
   .singup-form-input{
     width: 20.3125rem;
     height: 3.375rem;
@@ -150,7 +154,9 @@
     background-color: hsl(5, 53%, 91%);
     color: var(--Tomato);
   }
+  /* input end*/
 
+  /* form button */
   .singup-btn{
     width: 20.3125rem;
     height: 3.5rem;
@@ -161,9 +167,10 @@
     border: none;
 
   }
+  /* singup end */
 
 
-
+  /* success start */
   .success-container{
     max-width: 23.4375rem;
     display: none;
@@ -185,6 +192,7 @@
     margin-bottom: 2.75rem;
   }
 
+  /* success texts start */
   .success-header{
     font-weight: 700;
     font-size: 2.5rem;
@@ -201,6 +209,7 @@
   #successEmail{
     font-weight: 700;
   }
+  /* success texts end */
 
   .success-btn{
     width: 20.3125rem;
@@ -212,7 +221,10 @@
     align-self: center;
     border: none;
   }
+  /* success end */
 
+
+  /* footer start */
   .attribution{
     font-size: 11px;
     text-align: center;
@@ -224,17 +236,19 @@
       color: var(--Tomato);
     }
   }
+  /* footer end */
 
 
 
-  
-  @media only screen and (min-width: 37.5rem){
+  /* responsive css */
+  @media only screen and (min-width: 59.25rem){
     body{
         background-color: var(--Dark-Slate-Grey);
         height: 100vh;
         justify-content: center;
     }
 
+    /* singup start */
     .singup-container{
         max-width: 58rem;
         display: grid;
@@ -249,6 +263,7 @@
         grid-row: 1/-1;
     }
 
+    /* sing up texts start */
     .singup-main{
         grid-column: 1/2;
         grid-row: 1/-1;
@@ -264,7 +279,9 @@
     .signup-list{
         margin-bottom: 2.3125rem;
     }
+    /* sing up texts end */
 
+    /* form start */
     .singup-form{
         margin-top: 0rem;
     }
@@ -287,13 +304,15 @@
         cursor: pointer;
         box-shadow: var(--Tomato) 0px 30px 60px -25px, var(--Tomato)  0px 18px 36px -18px;        
     }
+    /* form end */
+    /* singup end */
 
-
+    /* success start */
     .success-container{
       max-width: 31.5625rem;
       height: 32.5rem;
       border-radius: 1.5625rem;
-      padding: 3rem 4rem 4rem 4rem;
+      padding: 3rem 4rem 1rem 4rem;
     }
 
     .success-icon{
@@ -308,6 +327,7 @@
 
     .success-text{
       margin-bottom: 2.875rem;
+      overflow-wrap:anywhere;
     }
 
     .success-btn{
@@ -320,7 +340,9 @@
       cursor: pointer;
       box-shadow: var(--Tomato) 0px 30px 60px -25px, var(--Tomato)  0px 18px 36px -18px; 
     }
+    /* success end */
 
+    /* footer */
     .attribution{
       color: white;
     }

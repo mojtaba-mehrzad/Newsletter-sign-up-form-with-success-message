@@ -10,6 +10,7 @@ form.addEventListener('submit', (e)=>{
     e.preventDefault();
     const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     const accaunt = e.target.querySelector("#email")
+    const sending= false;
     if(accaunt.value && accaunt.value.includes('@') && emailRegex.test(accaunt.value)){
         singupPage.classList.add('singup-container-submited')
         successPage.classList.add('success-container-submited')
@@ -17,11 +18,16 @@ form.addEventListener('submit', (e)=>{
     }else{
         email.classList.add('input-border-error','input-background-error')
         errors.innerText='Valid email required'  
+        setTimeout(()=>{
+            email.classList.remove('input-background-error')
+        },5000)
     }
 })
 
 successBtn.addEventListener("click", ()=>{
     singupPage.classList.remove('singup-container-submited')
     successPage.classList.remove('success-container-submited')
+    window.location.reload();
+    
 })
 
